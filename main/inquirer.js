@@ -49,10 +49,12 @@ async function allPrompts() {
         case 'Add an employee':
             await query.addEmployee();
             break;
+        case 'Update an employee role':
+            await query.updateEmpRole();
+            break;
         case 'Exit':
             console.log('Exiting. Goodbye!');
             process.exit(0);
-            break;
         default:
             console.log('Invalid selection, please try again!');
             break;
