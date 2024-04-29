@@ -15,7 +15,7 @@
 The Employee Manager is a command-line application that helps track departments, roles and employees within a business. It leverages MYSQL to allow users to effectively view, add, remove and update employee details along with their roles and departments.
 
 ## App Preview 👀
-[Employee Manager Demo](<demo/employee manager demo1.webm>)
+![alt text](<demo/employee manager demo.gif>)
 
 ## Features ✨
 1. **View Employees/Departments/Roles** - Easily retrieve and display all employees, departments and roles within your organization.
