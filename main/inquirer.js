@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 const consoleTable = require('console.table');
 const query = require('../queryFunctions')
-const { viewAllDepartments, viewAllRoles, viewAllEmployees } = require('../queryFunctions');
 
 //function that will generate prompts
 async function allPrompts() {
@@ -39,10 +38,16 @@ async function allPrompts() {
                     type: 'input',
                     name: 'newDpt',
                     message: 'What is the name of the new department?'
-                 }
-        ])
+                }
+            ])
             await query.addDepartment(newDepartment.newDpt);
             console.log(`Added ${newDepartment.newDpt} to the database.`);
+            break;
+        case 'Add a role':
+            await query.addRole()
+            break;
+        case 'Add an employee':
+            await query.addEmployee();
             break;
         case 'Exit':
             console.log('Exiting. Goodbye!');
@@ -57,6 +62,8 @@ async function allPrompts() {
     await allPrompts();
 
 }
+
+
 // call the allprompts() at the start of the application.
 allPrompts();
 
