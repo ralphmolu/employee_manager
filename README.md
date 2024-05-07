@@ -135,7 +135,7 @@ async function updateEmpRole(){
 ## License 📄
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Authors 👤
+## Author 👤
 ### Ralph Molu
 - [GitHub](https://github.com/ralphmolu)
 - [LinkedIn](https://www.linkedin.com/in/ralph-molu)
